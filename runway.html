@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runway Trends - Stylyz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main class="runway-main">
+        <div class="runway-container">
+            <section class="runway-section">
+                <h1>Seasonal Trends</h1>
+
+                <div class="season-tabs">
+                    <button class="season-tab active" data-season="spring">Spring</button>
+                    <button class="season-tab" data-season="summer">Summer</button>
+                    <button class="season-tab" data-season="fall">Fall</button>
+                    <button class="season-tab" data-season="winter">Winter</button>
+                </div>
+
+                <div id="seasonContent">
+                    <!-- Season content populated by JS -->
+                </div>
+            </section>
+
+            <section class="runway-section">
+                <h2>Recommended For You</h2>
+                <div id="runwayLoginPrompt" class="login-prompt" style="display: none;">
+                    <p>Please <a href="login.html">login</a> to see personalized recommendations based on your wardrobe.
+                    </p>
+                </div>
+                <div class="outfit-grid" id="recommendedOutfits">
+                    <!-- Recommendations populated by JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script type="module" src="/src/scripts/global.js"></script>
+    <script type="module" src="/src/scripts/runway.js"></script>
+</body>
+
+</html>

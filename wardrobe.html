@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wardrobe - Stylyz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main class="wardrobe-main">
+        <div class="wardrobe-header">
+            <h1>My Wardrobe</h1>
+            <div class="wardrobe-actions">
+                <button class="filter-button active" data-tab="items">Items</button>
+                <button class="filter-button" data-tab="combos">My Combos</button>
+            </div>
+            <button id="createOutfitBtn" class="cta-button"><i class="fas fa-plus"></i> Create New</button>
+        </div>
+
+        <div id="itemsContainer">
+            <div class="wardrobe-filters">
+                <button class="filter-button active" data-category="all">All</button>
+                <button class="filter-button" data-category="shirt">Tops</button>
+                <button class="filter-button" data-category="pants">Bottoms</button>
+                <button class="filter-button" data-category="jacket">Outerwear</button>
+                <button class="filter-button" data-category="shoes">Shoes</button>
+                <button class="filter-button" data-category="accessories">Accessories</button>
+            </div>
+
+            <div class="wardrobe-container">
+                <div class="wardrobe-items" id="wardrobeItems">
+                    <!-- Items will be populated by JS -->
+                </div>
+
+                <div class="empty-wardrobe" id="emptyWardrobe" style="display: none;">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Your wardrobe is empty</h3>
+                    <p>Start adding items to build your digital closet.</p>
+                    <a href="stylyz.html" class="cta-button">Add Items</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="combosContainer" style="display: none;">
+            <div class="wardrobe-container">
+                <div class="wardrobe-items" id="combosItems">
+                    <!-- Combos will be populated by JS -->
+                </div>
+                <div class="empty-wardrobe" id="emptyCombos" style="display: none;">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>No saved outfits yet</h3>
+                    <p>Generate recommendations to save outfit combinations.</p>
+                    <a href="stylyz.html" class="cta-button">Get Recommendations</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script type="module" src="/src/scripts/global.js"></script>
+    <script type="module" src="/src/scripts/wardrobe.js"></script>
+</body>
+
+</html>

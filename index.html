@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylyz - Your AI Fashion Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+</head>
+
+<body>
+    <header></header> <!-- Injected by JS -->
+
+    <!-- Particle Background -->
+    <canvas id="particles-bg"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+
+    <main class="home-main">
+        <section class="hero">
+            <!-- 3D Canvas -->
+            <canvas id="three-canvas"
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 500px; max-width: 80vw; z-index: 0; opacity: 0.4;"></canvas>
+
+            <h1>Redefine Your Style with AI</h1>
+            <p class="subtitle">Your personal fashion assistant powered by artificial intelligence</p>
+            <a href="stylyz.html" class="cta-button">Try Stylyz Now</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-tshirt feature-icon"></i>
+                <h2>Virtual Wardrobe</h2>
+                <p>Upload and organize your clothing items in one place. Access your fashion collection anytime,
+                    anywhere.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-magic feature-icon"></i>
+                <h2>AI Styling</h2>
+                <p>Our advanced AI analyzes your style preferences and suggests perfect outfits for any occasion.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-shopping-bag feature-icon"></i>
+                <h2>Trend Runway</h2>
+                <p>Stay updated with the latest fashion trends and discover new styles that match your personal taste.
+                </p>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Why Fashion Matters</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Fashion is more than just clothing—it's a form of self-expression, confidence, and identity. What
+                        we wear affects how we feel and how others perceive us.</p>
+                    <p>In today's fast-paced world, finding your personal style can be challenging. That's where Stylyz
+                        comes in.</p>
+                    <p>Our AI-powered platform helps you discover your unique style, organize your wardrobe, and make
+                        confident fashion choices every day.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to Transform Your Style?</h2>
+            <p>Join thousands of fashion enthusiasts who have discovered their perfect style with Stylyz.</p>
+            <a href="login.html" class="cta-button">Create Your Account</a>
+        </section>
+    </main>
+
+    <footer></footer> <!-- Injected by JS -->
+
+    <script type="module" src="/src/scripts/global.js"></script>
+    <script type="module" src="/src/scripts/script.js"></script>
+</body>
+
+</html>

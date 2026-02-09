@@ -1,0 +1,20 @@
+{
+  "name": "styleup",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "three": "^0.182.0"
+  }
+}
